@@ -59,7 +59,9 @@
             </div>
             <div class="lg:ml-[14%] md:ml-48">
               <img src="./images/logo.png" alt="">
-              <h1 class="btn text-4xl btn-ghost normal-case  md:text-white lg:text-white" >Fruit Burst</h1>
+              <h1 class="btn text-4xl btn-ghost normal-case  md:text-white lg:text-white" >
+                Fruit Burst
+              </h1>
               </div>
             <div class="navbar-end">
               <input type="text" placeholder="Search here " class="input rounded-full hidden lg:block md:block input-bordered lg:w-96" />
@@ -295,9 +297,6 @@
                       <button class="btn border-0 bg-[#F85559] text-white">Shop Now</button>
                     </div>
                   </form>
-                  <form method="dialog" class="modal-backdrop">
-                    <button>close</button>
-                  </form>                  
                 </dialog>
               </div>
             </div>
@@ -320,8 +319,8 @@
               </div>
               <div class="card-actions">
                 <!-- Open the modal using ID.showModal() method -->
-                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_5.showModal()">Details</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_3.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
                   <form method="dialog" class="modal-box">
                     <div class="card rounded-lg bg-base-100">
                       <figure class="px-10 pt-10">
@@ -366,12 +365,38 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
               </div>
               <div class="card-actions">
-                <a class="text-[#F85559] text-lg font-bold" href="">Details</a>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_4.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div class="card rounded-lg bg-base-100">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      <div class="card-body items-center space-y-6 text-center">
+                        <h2 class="card-title text-2xl font-bold text-[#121212]">12.90$ - 18.85$</h2>
+                        <p class="text-base font-medium text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <div class="rating">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-action flex justify-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn border-2 border-[#F85559] text-[#F85559] bg-white">Close</button>
+                      <button class="btn border-0 bg-[#F85559] text-white">Shop Now</button>
+                    </div>
+                  </form>
+                </dialog>
               </div>
             </div>
           </div>        
         </div>
-        <div class="flex justify-center mt-12">
+        <div class="flex justify-center mt-3 md:mt-4 lg:mt-12">
           <button class="btn border-0 bg-[#F85559] text-white">Shop Now</button>
         </div>
       </section>
